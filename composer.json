@@ -1,0 +1,45 @@
+{
+    "name": "korowai/ldiflib",
+    "description": "A library for handling LDIF text",
+    "type": "library",
+    "license": "MIT",
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "authors": [
+        {
+            "name": "Paweł Tomulik",
+            "email": "ptomulik@meil.pw.edu.pl"
+        }
+    ],
+    "suport": {
+      "issues": "https://github.com/korowai/framework/issues",
+      "source": "https://github.com/korowai/framework"
+    },
+    "require": {
+        "php": ">=7.2",
+        "korowai/compatlib": "*",
+        "korowai/contextlib": "*",
+        "korowai/contracts": "*",
+        "korowai/errorlib": "*",
+        "korowai/rfclib": "*",
+        "symfony/options-resolver": ">=4.2",
+        "league/uri": "^6.0"
+    },
+    "autoload": {
+      "psr-4" : {
+        "Korowai\\Lib\\Ldif\\" : "src/"
+      },
+      "files" : [
+      ],
+      "exclude-from-classmap": [
+        "/tests/",
+        "/Testing/"
+      ]
+    },
+    "autoload-dev": {
+      "psr-4" : {
+        "Korowai\\Tests\\Lib\\Ldif\\" : "tests/",
+        "Korowai\\Testing\\Ldiflib\\" : "Testing/"
+      }
+    }
+}
